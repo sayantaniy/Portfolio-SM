@@ -9,7 +9,7 @@ export const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="nav glass">
+    <nav className="nav glass w-3/4">
       <div className="nav-links">
         <Link 
           to="/" 

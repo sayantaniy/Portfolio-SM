@@ -10,7 +10,7 @@ import { Blog } from './pages/Blog';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className="app flex flex-col justify-between">
         <Navigation />
         <BackgroundText />
         <Routes>

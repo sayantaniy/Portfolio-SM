@@ -12,7 +12,7 @@ export const Languages = () => {
       <h2 className="section-title">Languages</h2>
       <div className="languages-list">
         {LANGUAGES_DATA.map((language) => (
-          <span key={language.name} className="language-item">
+          <span key={language.name} className="language-item rounded-2xl p-3">
             {language.name}
           </span>
         ))}
