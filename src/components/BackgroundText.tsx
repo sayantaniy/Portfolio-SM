@@ -1,6 +1,6 @@
 export const BackgroundText = () => {
   return (
-    <div className="background-text">改善</div>
+    <div className="background-text">あおい はる</div>
   );
 };
 
