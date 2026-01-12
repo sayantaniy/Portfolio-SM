@@ -6,11 +6,13 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 import { Blog } from './pages/Blog';
+import MovingCat from './components/MovingCat.tsx';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="app flex flex-col justify-between">
+        <MovingCat />
         <Navigation />
         <BackgroundText />
         <Routes>

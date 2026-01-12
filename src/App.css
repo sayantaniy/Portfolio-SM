@@ -534,3 +534,30 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.cat {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90px;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .cat {
+    display: none;
+  }
+}
+
+.cherry-blossom{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: rgb(red, green, blue);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,13 @@
+.static-cat {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  padding-right: 12px;
+}
+
+.static-cat img {
+  width: 42px;
+  height: auto;
+  image-rendering: pixelated;
+  user-select: none;
+}

@@ -1,6 +1,9 @@
+import CherryBlossom from "./CherryBlossom";
 export const BackgroundText = () => {
   return (
-    <div className="background-text">あおい はる</div>
+    
+    <div className="background-text">あおい はる
+     <CherryBlossom /></div>
   );
 };
 

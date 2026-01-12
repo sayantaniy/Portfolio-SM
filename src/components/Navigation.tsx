@@ -1,6 +1,7 @@
 import { Sun, Moon } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../ThemeProvider';
+import StaticCat from "./StaticCat";
 
 export const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
@@ -30,6 +31,7 @@ export const Navigation = () => {
           Blog
         </Link>
       </div>
+      <StaticCat />
       <button 
         className="theme-toggle" 
         onClick={toggleTheme} 
@@ -38,6 +40,8 @@ export const Navigation = () => {
       >
         {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
       </button>
+
+      
     </nav>
   );
 };

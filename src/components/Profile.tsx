@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 
+
 const PROFILE_DATA = {
   name: 'Sayantani Manna',
   role: '21 • Web Developer',
@@ -67,6 +68,7 @@ export const Profile = () => {
             </a>
           ))}
         </div>
+      
       </div>
     </section>
   );
