@@ -1,6 +1,6 @@
 const CONTACT_DATA = {
-  location: 'Howrah, India 711104',
-  phone: '+919163080086',
+  location: '',
+  phone: '',
   email: 'sayantanimanna139@gmail.com',
 };
 
