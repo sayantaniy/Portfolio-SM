@@ -1,5 +1,6 @@
 import { Profile } from '../components/Profile';
 import { About } from '../components/About';
+import { Experience } from '../components/Experience';
 import { Skills } from '../components/Skills';
 import { Education } from '../components/Education';
 import { Languages } from '../components/Languages';
@@ -10,6 +11,7 @@ export const Home = () => {
     <div className="container">
       <Profile />
       <About />
+      <Experience />
       <Skills />
       <Education />
       <Languages />
@@ -18,3 +20,4 @@ export const Home = () => {
   );
 };
 
+export default Home;

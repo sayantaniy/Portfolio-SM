@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { Navigation } from './components/Navigation';
 import { BackgroundText } from './components/BackgroundText';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
-import { Blog } from './pages/Blog';
+import { Connect } from './pages/Connect';
 import MovingCat from './components/MovingCat.tsx';
 
 const App = () => {
@@ -18,7 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/blog" element={<Navigate to="/connect" replace />} />
         </Routes>
         <Footer />
       </div>

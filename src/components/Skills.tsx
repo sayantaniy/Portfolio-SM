@@ -2,43 +2,34 @@ import type { SkillCategory } from '../types';
 
 const SKILLS_DATA: SkillCategory[] = [
   {
-    title: 'Web Development (Frontend)',
+    title: 'Frontend',
     skills: [
-      'HTML, CSS, JavaScript',
+      'Next.js',
       'React.js',
+      'TypeScript',
+      'JavaScript',
       'Tailwind CSS',
-      'UI/UX styling and responsive design',
+      'HTML5 & CSS3',
     ],
   },
   {
-    title: 'Database Management',
+    title: 'Backend & Data',
     skills: [
-      'MySQL (installation, setup, troubleshooting)',
-      'MongoDB (basic operations and structure understanding)',
+      'Node.js',
+      'MySQL',
+      'MongoDB',
+      'REST APIs',
+      'Local Storage',
     ],
   },
   {
-    title: 'Tools & Platforms',
+    title: 'Core & Tools',
     skills: [
-      'Visual Studio Code (VS Code)',
-      'GitHub & GitHub Pages (version control, project deployment)',
-      'Google Cloud Arcade (hands-on cloud labs and challenges)',
-    ],
-  },
-  {
-    title: 'Programming & Concepts',
-    skills: [
-      'Basic Python',
-      'Command-line operations (macOS Terminal)',
-      'Local storage handling in JavaScript',
-      'Data Structures & Algorithms (DSA Basics) — arrays, linked lists, stacks, queues, recursion, and sorting/searching fundamentals',
-    ],
-  },
-  {
-    title: 'Artificial Intelligence (Fundamentals)',
-    skills: [
-      'Understanding of AI basics (machine learning concepts, neural networks, and model fundamentals)',
-      'Awareness of AI tools and real-world applications',
+      'Python',
+      'DSA',
+      'Git & GitHub',
+      'VS Code',
+      'Terminal',
     ],
   },
 ];
@@ -46,16 +37,36 @@ const SKILLS_DATA: SkillCategory[] = [
 export const Skills = () => {
   return (
     <section className="skills-section glass">
-      <h2 className="section-title">Skills</h2>
-      <div className="skills-grid">
+      <div className="section-header">
+        <h2 className="section-title">
+          <span>Tech Stack</span>
+        </h2>
+        <span className="section-tag">Skills</span>
+      </div>
+
+      <div className="skills-list">
         {SKILLS_DATA.map((category) => (
-          <div key={category.title} className="skill-category">
-            <h3 className="skill-category-title">{category.title}</h3>
-            <ul className="skill-list">
+          <div 
+            key={category.title} 
+            className="skill-row"
+          >
+            <div className="skill-category-label">
+              <span className="text-xs font-mono font-medium text-[var(--accent-pink)] uppercase tracking-wider">
+                {category.title}
+              </span>
+            </div>
+            
+            <div className="skill-pills">
               {category.skills.map((skill, index) => (
-                <li key={index}>{skill}</li>
+                <span
+                  key={index}
+                  className="skill-pill"
+                >
+                  <span className="skill-pill-dot" />
+                  <span className="leading-tight">{skill}</span>
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
@@ -63,3 +74,4 @@ export const Skills = () => {
   );
 };
 
+export default Skills;
