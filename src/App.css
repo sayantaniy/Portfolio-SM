@@ -464,7 +464,7 @@
 }
 
 .contact-email-card {
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 16px;
   border-radius: 12px;
@@ -824,6 +824,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .language-name-wrapper {
@@ -848,8 +849,9 @@
   font-weight: 600;
   color: var(--accent-pink);
   background: var(--accent-pink-soft);
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .proficiency-bar-bg {

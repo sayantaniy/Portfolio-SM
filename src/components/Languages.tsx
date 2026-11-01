@@ -4,19 +4,19 @@ const LANGUAGES_DATA: Language[] = [
   { 
     name: 'English', 
     nativeName: 'English', 
-    level: 'Bilingual & Full Professional (C2)', 
+    level: 'Bilingual & Full Professional',
     proficiency: 100 
   },
   { 
     name: 'Hindi', 
     nativeName: 'हिन्दी', 
-    level: 'Native & Bilingual Proficiency (C2)', 
+    level: 'Native & Bilingual Proficiency',
     proficiency: 100 
   },
   { 
     name: 'Bengali', 
     nativeName: 'বাংলা', 
-    level: 'Native & Bilingual Proficiency (C2)', 
+    level: 'Native & Bilingual Proficiency',
     proficiency: 100 
   },
 ];
@@ -39,7 +39,7 @@ export const Languages = () => {
                 <span className="language-name">{lang.name}</span>
                 <span className="language-native">{lang.nativeName}</span>
               </div>
-              <span className="language-badge">C2 Mastery</span>
+             
             </div>
 
             <div className="proficiency-bar-bg" title={`${lang.proficiency}% Proficiency`}>
