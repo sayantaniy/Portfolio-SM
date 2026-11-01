@@ -3,7 +3,7 @@ import CherryBlossom from './CherryBlossom';
 
 const PROFILE_DATA = {
   name: 'Sayantani Manna',
-  role: '22 • Software Developer',
+  role: '22  •  Software Developer',
   bio: 'Crafting thoughtful digital interfaces and robust web applications with a focus on fundamentals, clean code, and aesthetic restraint.',
   imageUrl: 'https://i.pinimg.com/736x/c2/04/67/c204673d3d2366ed5444e4f632ddf5f7.jpg',
   socialLinks: [
@@ -75,7 +75,7 @@ export const Profile = () => {
           </span>
         </h1>
 
-        <p className="text-sm font-medium tracking-tight text-[var(--text-color)] opacity-90">
+        <p className="text-sm font-medium text-[var(--text-color)] opacity-90">
           {PROFILE_DATA.role}
         </p>
 

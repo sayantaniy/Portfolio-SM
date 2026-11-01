@@ -32,7 +32,7 @@ export const GitHubActivity = () => {
               <span className="w-2 h-2 rounded-full bg-[var(--accent-pink)]"></span>
               @{GITHUB_USERNAME}
             </span>
-            <span className="text-xs text-[var(--text-muted)]">• Continuous Open-Source Learning</span>
+           
           </div>
 
           <div className="flex items-center gap-2">
