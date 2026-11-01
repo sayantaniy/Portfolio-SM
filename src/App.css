@@ -245,7 +245,7 @@
   backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   color: var(--text-color);
-  font-family: 'Berkeley Mono', monospace;
+  font-family: 'Arimo', monospace;
   font-size: 10px;
   padding: 3px 8px;
   border-radius: 8px;
@@ -452,7 +452,7 @@
 }
 
 .section-tag {
-  font-family: 'Berkeley Mono', monospace;
+  font-family: 'Arimo', monospace;
   font-size: 11px;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -670,7 +670,7 @@
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  font-family: 'Berkeley Mono', monospace;
+  font-family: 'Arimo', monospace;
 }
 
 .skill-pill-dot {

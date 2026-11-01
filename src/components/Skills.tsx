@@ -16,7 +16,7 @@ const SKILLS_DATA: SkillCategory[] = [
     title: 'Backend & Data',
     skills: [
       'Node.js',
-      'MySQL',
+      'Express',
       'MongoDB',
       'REST APIs',
       'Local Storage',
@@ -26,9 +26,10 @@ const SKILLS_DATA: SkillCategory[] = [
     title: 'Core & Tools',
     skills: [
       'Python',
+      'C++',
+      'Java',
       'DSA',
       'Git & GitHub',
-      'VS Code',
       'Terminal',
     ],
   },

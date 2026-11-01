@@ -49,7 +49,7 @@ export const Experience = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--text-color)] hover:text-[var(--accent-pink)] transition-colors mt-0.5"
                 >
-                  <span>Weevil Drones</span>
+                  <span>Weevils Drones</span>
                   <ExternalLink size={12} className="opacity-70" />
                 </a>
               </div>
@@ -60,7 +60,7 @@ export const Experience = () => {
             </div>
 
             <p className="text-xs text-[var(--text-secondary)] mt-3 leading-relaxed">
-              Website maintenance, research, and drone software.
+             Responsible for website development and maintenance, technical research, and developing and improving software solutions for drone systems.
             </p>
           </div>
         </div>
