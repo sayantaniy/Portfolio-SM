@@ -3,7 +3,7 @@ import CherryBlossom from './CherryBlossom';
 
 const PROFILE_DATA = {
   name: 'Sayantani Manna',
-  role: 'Software Developer & Designer',
+  role: '22 • Software Developer',
   bio: 'Crafting thoughtful digital interfaces and robust web applications with a focus on fundamentals, clean code, and aesthetic restraint.',
   imageUrl: 'https://i.pinimg.com/736x/c2/04/67/c204673d3d2366ed5444e4f632ddf5f7.jpg',
   socialLinks: [
