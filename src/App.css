@@ -549,7 +549,7 @@
 }
 
 .about-text {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14.5px;
   line-height: 1.75;
   color: var(--text-secondary);
@@ -1151,6 +1151,11 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 640px) {
+  .nav-container {
+    padding: 0 16px;
+    margin-bottom: 12px;
+  }
+
   .nav {
     padding: 6px 12px;
   }
@@ -1165,7 +1170,7 @@
   }
 
   .container {
-    padding: 20px 16px 60px;
+    padding: 20px 20px 60px;
     gap: 18px;
   }
 
@@ -1184,10 +1189,15 @@
   }
 
   .contact-email-card {
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
   }
 
-  .contact-email-card button,
+  .contact-email-card button {
+    width: auto;
+  }
+
   .contact-form > .action-btn {
     width: 100%;
   }
@@ -1203,6 +1213,19 @@
 
   .background-text {
     font-size: 70px;
+  }
+
+  .github-chart-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .github-chart-img {
+    width: auto;
+    max-width: none;
   }
 
   .timeline {
